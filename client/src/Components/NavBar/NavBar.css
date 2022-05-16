@@ -1,0 +1,29 @@
+.container-barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(202, 166, 5);
+    padding: 5px  5px;
+}
+.title{
+    border-style: none;
+    background-color: rgba(255, 255, 0, 0);
+    font-family: fantasy;
+    font-size: large;
+    text-decoration: none;
+}
+
+#add-btn{
+    background-color: rgba(255, 255, 0, 0);
+    border-style: none;
+    font-family: fantasy;
+    font-size: large;
+}
+
+.title:hover{
+    color: rgb(40, 40, 255);
+}
+
+#add-btn:hover{
+    color: rgb(40, 40, 255);
+}
