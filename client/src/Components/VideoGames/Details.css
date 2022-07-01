@@ -1,8 +1,11 @@
 .contain-gameDetail{
     display: block;
     /* flex-direction: column; */
-    margin: 5% 20%;
-    background-color: rgba(128, 128, 128, 0.564);
+    padding: 50px;
+    margin: 5% 10%;
+    background-color: rgb(205, 207, 207);
+    text-align: center;
+    /* background-color: rgba(128, 128, 128, 0.564); */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,6 +15,12 @@
 
 #letras{
     color: yellow
+}
+
+.one{
+    display: flex;
+    justify-content: space-evenly;
+    /* text-align: left; */
 }
 
 .all-items{
@@ -26,8 +35,26 @@
 }
 
 #plats{
-    margin-left: 8px;  
+    /* display: flex;
+    flex-direction: column; */
+    margin: 6px;  
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: goldenrod;
+}
+
+#gen{
+    margin: 10px;  
+    padding: 5px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: goldenrod;
+}
+
+#two{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.525);
 }
 
 .first-date{

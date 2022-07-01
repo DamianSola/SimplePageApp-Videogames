@@ -28,7 +28,7 @@ const getVideoGamesByApi = async () => {
 }
 
 const videoGamesDetails = async(id) => {
-    if(id.length > 4) {
+    if(id.length > 6) {
         const dbgame = await Videogame.findOne({where: {id:id}, include:Genres})
         return dbgame;
     } 

@@ -17,7 +17,7 @@ const Details = () => {
     // .then((res) => res.data)
     
     // console.log(gameDetails)
-   
+   console.log(videogame)
 
 
     useEffect(()=>{
@@ -33,19 +33,17 @@ const Details = () => {
             
                 <img src={videogame.img} id="img1" alt="imagen del juego" />
                 <div className="all-items">
-                <div>
+                <div className="one">
 
                 <h4 >released: {videogame.released}</h4>
 
                 <h4>rating: {videogame.rating}</h4>
                 </div>
+                <h4>{videogame.genres && videogame.genres.map(e => <a id="gen" key={e.id}>{e.name}</a>)}</h4>
 
-                <h4>platforms:{videogame.platforms && videogame.platforms.map(e => <a id="plats" key={e}>{e}</a>)}</h4>
-                {/* <h4>genres:</h4> */}
-                <h4>genres: {videogame.genres && videogame.genres.map(e => <a id="plats" key={e.id}>{e.name}</a>)}</h4>
-            
+                {videogame.platforms && videogame.platforms.map(e => <a id="plats" key={e}>{e}</a>)}            
                 </div>
-            <p>{videogame.description}</p>
+            <p id="two">{videogame.description}</p>
                 </div>}
                 {loading2 && <Loading2/>}
         </div>

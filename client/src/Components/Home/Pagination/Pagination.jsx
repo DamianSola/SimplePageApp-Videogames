@@ -4,7 +4,7 @@ import "./Pagination.css"
 
 const Pagination = ({page,gamesPerPage,totalGames}) => {
     const numPage = [];
-    if(totalGames <= 7){
+    if(totalGames <= gamesPerPage){
         return (<div></div>)
     }else {
         for(let i=0; i<= Math.ceil(totalGames/gamesPerPage); i++ ){
