@@ -9,7 +9,7 @@ export const getAllVideoGames = (arg) => {
         }
     }
     return function (dispatch){
-        return axios.get("http://localhost:3001/videogames")
+        return axios.get("https://videogames-damian.herokuapp.com/videogames")
         .then((res) => {
             dispatch({
                 type: "GET_ALL_VIDEOGAMES",
@@ -21,7 +21,7 @@ export const getAllVideoGames = (arg) => {
 
 export const getGameByName = (name) => {
     return function (dispatch){
-        return axios.get("http://localhost:3001/videogames?name="+name)
+        return axios.get("https://videogames-damian.herokuapp.com/videogames?name="+name)
         .then((res) => {
             dispatch({
                 type: "GET_VIDEOGAME",
@@ -33,7 +33,7 @@ export const getGameByName = (name) => {
 
 export const Genres = () =>{
     return function(dispatch){
-        return axios.get("http://localhost:3001/genres")
+        return axios.get("https://videogames-damian.herokuapp.com/genres")
         .then((res =>{
             dispatch({
                 type:"ALL_GENRES",
@@ -66,7 +66,7 @@ export const filterABC = (word) =>{
 
 export const videoGamesDetails = (id) => {
     return function(dispatch){
-        return axios.get(`http://localhost:3001/videogames/${id}`)
+        return axios.get(`https://videogames-damian.herokuapp.com/videogames/${id}`)
         .then(res => {
             dispatch({
                 type:"VIDEOGAMES_DETAILS",
@@ -84,7 +84,7 @@ export const removeGameDetail = () => {
 }
 export const createVideoGame = (data) => {
     return function(dispatch){
-        return axios.post(`http://localhost:3001/videogames`,data)
+        return axios.post(`https://videogames-damian.herokuapp.com/videogames`,data)
             .then((res)=>{
                 return res;
             })
